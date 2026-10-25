@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+
+users.csv
+inspection_report.csv
+action_log.csv
+process_data.csv
+inspection_images/
+detected_output.jpg
+
+defect_model_backup.pt

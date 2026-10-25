@@ -1,0 +1,10 @@
+streamlit==1.65.0
+streamlit-webrtc==0.79.0
+ultralytics==8.4.185
+torch
+torchvision
+opencv-python-headless
+numpy
+pandas
+plotly==7.1.0
+av
