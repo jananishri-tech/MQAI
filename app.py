@@ -725,7 +725,12 @@ if page == "Image Inspection":
             )
 
             st.metric("Defects detected", prediction["count"])
+            if prediction["count"] > 0:
+                st.error("Potential surface defects identified. Review the highlighted regions before making a quality decision.")
+            else:
+                st.info("No defects detected above the model's confidence threshold. This does not guarantee a defect-free surface.")
 
+            st.caption("AI-assisted inspection only. Final acceptance or rejection requires human verification.")
             if prediction["detections"]:
                 st.dataframe(
                     pd.DataFrame(prediction["detections"]),
